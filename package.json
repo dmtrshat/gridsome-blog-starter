@@ -1,0 +1,46 @@
+{
+  "name": "gridsome-blog-starter",
+  "version": "1.0.0",
+  "description": "This is the starting blog template for Gridsome.",
+  "private": true,
+  "author": "Dmitry Shatokhin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmtrshat/gridsome-blog-starter.git"
+  },
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/source-contentful": "^0.4.0",
+    "contentful": "^7.8.1",
+    "gridsome": "^0.6.0",
+    "markdown-it": "^8.4.2"
+  },
+  "devDependencies": {
+    "husky": "^3.0.1",
+    "lint-staged": "^9.2.0",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-custom-properties": "^9.0.2",
+    "postcss-nested": "^4.1.2",
+    "prettier": "^1.18.2",
+    "stylelint": "^10.1.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-order": "^3.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{css,postcss,vue,js}": [
+      "stylelint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
