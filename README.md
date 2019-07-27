@@ -35,6 +35,4 @@ This is the starting blog template for Gridsome.
 
 I hope you enjoy this starter. 
 
-Guide to create, I will publish on the official website of Gridsome and in my blog.
-
 See u!😘 😉
