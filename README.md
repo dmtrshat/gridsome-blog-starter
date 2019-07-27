@@ -27,7 +27,7 @@ This is the starting blog template for Gridsome.
 ### 2. Create a Gridsome project
 
 1. `gridsome create my-project gridsome/gridsome-blog-starter` to install default starter
-2. `cdmy-project` to open the folder
+2. `cd my-project` to open the folder
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
 
